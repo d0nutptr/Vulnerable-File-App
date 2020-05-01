@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">File App</string>
+    <string name="button_login">Login</string>
+    <string name="bar_files">Files</string>
+</resources>
