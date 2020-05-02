@@ -14,12 +14,13 @@
         android:orientation="horizontal"
         android:paddingLeft="8dp">
 
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_weight="0"
-            app:srcCompat="@drawable/folder" />
+            android:background="?attr/selectableItemBackground"
+            android:foreground="@drawable/back" />
 
         <TextView
             android:id="@+id/textView"
@@ -27,13 +28,28 @@
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="@string/bar_files"
+            android:text="@string/bar_config"
             android:textColor="@color/colorText"
             android:textSize="30sp" />
     </LinearLayout>
 
-    <ListView
-        android:id="@+id/file_list"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="24dp">
+
+        <EditText
+            android:id="@+id/server_address_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:ems="10"
+            android:hint="@string/config_set_server"
+            android:inputType="textPersonName"
+            android:textColor="@color/colorText"
+            android:textColorHint="@color/colorHint" />
+    </LinearLayout>
+
 </LinearLayout>
