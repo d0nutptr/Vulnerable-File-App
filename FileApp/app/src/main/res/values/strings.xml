@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">File App</string>
+    <string name="button_login">Login</string>
+    <string name="bar_files">Files</string>
+    <string name="bar_config">Configuration</string>
+    <string name="error_unknown_error">Unknown error occurred</string>
+    <string name="error_invalid_auth">Invalid Username or Password</string>
+    <string name="config_set_server">Server Address</string>
+</resources>
